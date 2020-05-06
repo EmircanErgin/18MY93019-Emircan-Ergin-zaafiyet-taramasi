@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed May 06 22:44:05 2020 as: nmap -A -p80 -&#45;script http-xssed.nse -oX emircanErgin.xml howtoforge.com testphp.vulnweb.com -->
+<nmaprun scanner="nmap" args="nmap -A -p80 -&#45;script http-xssed.nse -oX emircanErgin.xml howtoforge.com testphp.vulnweb.com" start="1588794245" startstr="Wed May 06 22:44:05 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1588794248" endtime="1588794296"><status state="up" reason="echo-reply" reason_ttl="53"/>
+<address addr="104.26.2.165" addrtype="ipv4"/>
+<hostnames>
+<hostname name="howtoforge.com" type="user"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="55"/><service name="http" product="cloudflare" servicefp="SF-Port80-TCP:V=7.80%I=7%D=5/6%Time=5EB3139A%P=i686-pc-windows-windows%r(GetRequest,180,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2006\x20May\x202020\x2019:44:22\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20155\r\nConnection:\x20close\r\nServer:\x20cloudflare\r\nCF-RAY:\x2058f5320b89c872ff-AMS\r\ncf-request-id:\x20028d1d9b39000072ff19baa200000001\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,180,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2006\x20May\x202020\x2019:44:22\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20155\r\nConnection:\x20close\r\nServer:\x20cloudflare\r\nCF-RAY:\x2058f5320c8f87fa4c-AMS\r\ncf-request-id:\x20028d1d9bd30000fa4c09bd0200000001\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,9B,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,13C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20cloudflare\r\nDate:\x20Wed,\x2006\x20May\x202020\x2019:44:22\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20155\r\nConnection:\x20close\r\nCF-RAY:\x20-\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,180,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Wed,\x2006\x20May\x202020\x2019:44:22\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20155\r\nConnection:\x20close\r\nServer:\x20cloudflare\r\nCF-RAY:\x2058f5320fa947d901-AMS\r\ncf-request-id:\x20028d1d9dcd0000d9013b1bb200000001\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    Server: cloudflare&#xa;    CF-RAY: 58f5320fa947d901-AMS&#xa;    cf-request-id: 028d1d9dcd0000d9013b1bb200000001&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  GetRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    Server: cloudflare&#xa;    CF-RAY: 58f5320b89c872ff-AMS&#xa;    cf-request-id: 028d1d9b39000072ff19baa200000001&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  HTTPOptions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    Server: cloudflare&#xa;    CF-RAY: 58f5320c8f87fa4c-AMS&#xa;    cf-request-id: 028d1d9bd30000fa4c09bd0200000001&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  RTSPRequest: &#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: cloudflare&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    CF-RAY: -&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    Server: cloudflare&#xa;    CF-RAY: 58f5320fa947d901-AMS&#xa;    cf-request-id: 028d1d9dcd0000d9013b1bb200000001&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    Server: cloudflare&#xa;    CF-RAY: 58f5320b89c872ff-AMS&#xa;    cf-request-id: 028d1d9b39000072ff19baa200000001&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    Server: cloudflare&#xa;    CF-RAY: 58f5320c8f87fa4c-AMS&#xa;    cf-request-id: 028d1d9bd30000fa4c09bd0200000001&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: cloudflare&#xa;    Date: Wed, 06 May 2020 19:44:22 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 155&#xa;    Connection: close&#xa;    CF-RAY: -&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;cloudflare&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-server-header" output="cloudflare"><elem>cloudflare</elem>
+</script><script id="http-xssed" output="&#xa;  &#xa;&#xa;  &#xa;"><table>
+</table>
+<table>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<distance value="11"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="192.168.1.1" rtt="0.00"/>
+<hop ttl="2" ipaddr="212.156.201.88" rtt="10.00" host="212.156.201.88.static.turktelekom.com.tr"/>
+<hop ttl="7" ipaddr="212.119.24.245" rtt="100.00"/>
+<hop ttl="8" ipaddr="129.250.4.172" rtt="80.00" host="ae-15.r25.amstnl02.nl.bb.gin.ntt.net"/>
+<hop ttl="9" ipaddr="129.250.2.109" rtt="90.00" host="ae-8.r03.amstnl02.nl.bb.gin.ntt.net"/>
+<hop ttl="10" ipaddr="81.20.65.150" rtt="90.00"/>
+<hop ttl="11" ipaddr="104.26.2.165" rtt="100.00"/>
+</trace>
+<times srtt="66765" rttvar="13670" to="121445"/>
+</host>
+<host starttime="1588794248" endtime="1588794296"><status state="up" reason="echo-reply" reason_ttl="51"/>
+<address addr="176.28.50.165" addrtype="ipv4"/>
+<hostnames>
+<hostname name="testphp.vulnweb.com" type="user"/>
+<hostname name="rs202995.rs.hosteurope.de" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="52"/><service name="http" product="nginx" version="1.4.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.4.1</cpe></service><script id="http-server-header" output="nginx/1.4.1"><elem>nginx/1.4.1</elem>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="udp" portid="37269"/>
+<osmatch name="Kyocera CopyStar CS-2560 printer" accuracy="95" line="41903">
+<osclass type="printer" vendor="Kyocera" osfamily="embedded" accuracy="95"><cpe>cpe:/h:kyocera:cs-2560</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.18" accuracy="92" line="44890">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.4.18</cpe></osclass>
+</osmatch>
+<osmatch name="AVM FRITZ!Box FON WLAN 7050, Linksys WAG200G, or Netgear DG834GT wireless broadband router" accuracy="92" line="8784">
+<osclass type="WAP" vendor="AVM" osfamily="embedded" accuracy="92"><cpe>cpe:/h:avm:fritz%21box_fon_wlan_7050</cpe></osclass>
+<osclass type="WAP" vendor="Linksys" osfamily="embedded" accuracy="92"><cpe>cpe:/h:linksys:wag200g</cpe></osclass>
+<osclass type="WAP" vendor="Netgear" osfamily="embedded" accuracy="92"><cpe>cpe:/h:netgear:dg834gt</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="91" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.5" accuracy="91" line="65492">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.5</cpe></osclass>
+</osmatch>
+<osmatch name="Dell Remote Access Controller (DRAC 6)" accuracy="91" line="22034">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="91"><cpe>cpe:/h:dell:remote_access_card:6</cpe></osclass>
+</osmatch>
+<osmatch name="Google Nexus Player" accuracy="91" line="31463">
+<osclass type="media device" vendor="Google" osfamily="Android" accuracy="91"><cpe>cpe:/o:google:android</cpe></osclass>
+</osmatch>
+<osmatch name="Extreme Networks ExtremeXOS 12.5.4" accuracy="90" line="25018">
+<osclass type="switch" vendor="Extreme Networks" osfamily="ExtremeXOS" osgen="12.X" accuracy="90"><cpe>cpe:/o:extremenetworks:extremexos:12.5.4</cpe></osclass>
+</osmatch>
+<osmatch name="Supermicro IPMI remote management" accuracy="90" line="100843">
+<osclass type="remote management" vendor="Supermicro" osfamily="embedded" accuracy="90"/>
+</osmatch>
+<osmatch name="Sony Bravia HX720-series TV" accuracy="90" line="98895">
+<osclass type="media device" vendor="Sony" osfamily="embedded" accuracy="90"/>
+</osmatch>
+</os>
+<uptime seconds="2511824" lastboot="Tue Apr 07 21:01:12 2020"/>
+<distance value="13"/>
+<tcpsequence index="258" difficulty="Good luck!" values="33B62ED1,D574DAC4,B89032E7,4361322B,8812D1DD,F712AB3B"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="63DC31AA,63DC31FA,63DC31AA,63DC3236,63DC3222,63DC31D2"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="192.168.1.1" rtt="0.00"/>
+<hop ttl="2" ipaddr="212.156.201.88" rtt="10.00" host="212.156.201.88.static.turktelekom.com.tr"/>
+<hop ttl="7" ipaddr="81.25.202.221" rtt="50.00"/>
+<hop ttl="8" ipaddr="129.250.9.234" rtt="50.00" host="ae-0.level3.mlanit01.it.bb.gin.ntt.net"/>
+<hop ttl="10" ipaddr="213.242.120.246" rtt="80.00" host="ae19.cr-vega.sxb1.bb.godaddy.com"/>
+<hop ttl="11" ipaddr="87.230.112.5" rtt="70.00" host="ae0-v100.sr-helios.sxb1.mass.systems"/>
+<hop ttl="12" ipaddr="5.35.227.35" rtt="80.00" host="rsn0517.rs1.hosteurope.de"/>
+<hop ttl="13" ipaddr="176.28.50.165" rtt="90.00" host="rs202995.rs.hosteurope.de"/>
+</trace>
+<times srtt="64142" rttvar="14794" to="123318"/>
+</host>
+<runstats><finished time="1588794296" timestr="Wed May 06 22:44:56 2020" elapsed="51.59" summary="Nmap done at Wed May 06 22:44:56 2020; 2 IP addresses (2 hosts up) scanned in 51.59 seconds" exit="success"/><hosts up="2" down="0" total="2"/>
+</runstats>
+</nmaprun>
